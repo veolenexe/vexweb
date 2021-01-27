@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1= title
+
+        each hall in hall_list
+            hr
+            .hall_description
+                .hall_main_info
+                    img(src=hall.picture_src alt=hall.name class='hall_picture')
+                    .hall_main_info_text
+                        a(href='/catalog/tables' class='link hall_link') #{hall.name} зал
+                        p(class='hall_info_cuisines')  #{hall.cuisines.available} кухня
+                p(class='hall_info') #{hall.description}
+
+        else
+            .hall_decription There are no halls.

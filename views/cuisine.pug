@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    h1 Наша кухня:
+    h4 В нашем ресторане есть широкий выбор раздичных блюд и напитков. На этой странице вы можете посмотреть самые популярные блюда национальной кухни
+    hr
+    .cuisines_types
+        .cuisines_type
+            h3(class='cuisines_description') Итальянская кухня
+            .food_types
+                .food_type
+                    img(src='/images/rav.jpg' class='food_picture' alt='Равиоли')
+                    p(class='food_name') Равиоли
+                .food_type
+                    img(src='/images/pizza.jpg' class='food_picture' alt='Пицца')
+                    p(class='food_name') Пицца
+                .food_type
+                    img(src='/images/rizotto.jpg' class='food_picture' alt='Ризотто')
+                    p(class='food_name') Ризотто
+        hr
+        .cuisines_type
+        h3(class='cuisines_description') Японская кухня
+        .food_types
+            .food_type
+                img(src='/images/ramen.jpg' class='food_picture' alt='Рамэн')
+                p(class='food_name') Рамэн
+            .food_type
+                img(src='/images/sushi.jpg' class='food_picture' alt='Суши')
+                p(class='food_name') Суши
+            .food_type
+                img(src='/images/tom yum.jpg' class='food_picture' alt='Том ям')
+                p(class='food_name') Том ям
+        hr
+        .cuisines_type
+        h3(class='cuisines_description') Русская кухня
+        .food_types
+            .food_type
+                img(src='/images/shi.jpg' class='food_picture' alt='Щи')
+                p(class='food_name') Щи
+            .food_type
+                img(src='/images/kur.jpg' class='food_picture' alt='Курник')
+                p(class='food_name') Курник
+            .food_type
+                img(src='/images/pel.jpg' class='food_picture' alt='Пельмени')
+                p(class='food_name') Пельмени

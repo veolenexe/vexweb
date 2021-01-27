@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1(class='form_info') Забронировать столик №#{table.number}
+    h3(class='form_info') Вы выбрали #{table.hall.name} зал.
+    form(method='POST' action='' class='table_form')
+        div.form-group
+            label(for='person_name') Ваше имя:
+            input#person_name.form-control(type='text' placeholder='Введите ваше имя' name='person_name' required='true')
+        div.form-group
+            label(for='time') Время бронирования:
+            input#time.form-control(type='time' name='time' required='true')
+        button.btn.btn-primary(type='submit') Submit
+    if errors
+        ul
+            for error in errors
+                li!= error.msg

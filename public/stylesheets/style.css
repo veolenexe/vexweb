@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.content{
+    flex-basis: 85%;
+    margin: 0 1%;
+}
+.header {
+    flex-basis: 10%;
+    display: flex;
+    padding-bottom: 1px;
+    border-bottom: 1px solid black;
+}
+.footer{
+    flex-basis: 5%;
+    margin: 0 1%;
+}
+.logo {
+   flex-basis: 10%;
+    width: 200px;
+    height: 100px;
+}
+.home_hall_pictures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_hall_picture {
+    flex-basis: 25%;
+    height: 250px;
+}
+
+.home_hall_picture:hover {
+    transform: scale(1.1);
+    box-shadow:  0 0 5px;
+}
+
+.header_menu{
+    flex-basis: 90%;
+}
+.header_links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header_link {
+    text-align: center;
+    font-size: 22pt;
+}
+
+
+
+.hall_description {
+    display: flex;
+    flex-direction: column;
+}
+
+.hall_main_info {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+
+
+}
+
+.hall_main_info_text {
+    display: flex;
+    flex-basis: 70%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.hall_info_cuisines {
+    font-size: 14pt;
+}
+
+.hall_info {
+    font-size: 16pt;
+}
+
+.hall_picture {
+    flex-basis: 30%;
+    height: 240px;
+}
+
+.cuisines_types {
+
+}
+
+.cuisines_type {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuisines_description {
+    text-align: center;
+    flex-basis: 5%;
+}
+
+.food_types {
+    display: flex;
+    flex-basis: 95%;
+    flex-direction: row;
+}
+
+.food_type {
+    flex-basis: 33%;
+}
+
+.food_picture {
+    display: block;
+    width: 260px;
+    height: 200px;
+    margin: auto;
+
+    object-fit: cover;
+}
+
+.food_name {
+    text-align: center;
+}
+
+.tables_halls_and_tables {
+    width: 100%;
+    border: 1px;
+}
+
+.table_form {
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 2%;
+    width: 500px;
+    padding: 2%;
+}
+.form_info {
+    text-align: center;
+}

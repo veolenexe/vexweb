@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Добро пожаловать на странице нашего ресторана, здесь вы можете посмотреть наше расписание и забронировать столик в одном из 4 залов
+
+  h1 В данный момент у нас:
+
+  if error
+    p Ошибка.
+  else
+    ul
+      li !{data.available_table_count} #[strong Свободных столика]
+      li !{data.hall_count} #[strong Доступных зала]
+  .home_hall_pictures
+    a(href='#')
+      img(class='home_hall_picture' src='/images/green.jpg' alt='green')
+    a(href='/catalog/tables')
+      img(class='home_hall_picture' src='/images/yellow.jpg' alt='yellow')
+    a(href='/catalog/tables')
+      img(class='home_hall_picture' src='/images/red.jpg' alt='red')
+    a(href='/catalog/tables')
+      img(class='home_hall_picture' src='/images/white.jpg' alt='white')

@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    h1= title
+    .tables_table
+        table(class='tables_halls_and_tables')
+            each hall in hall_list
+                tr
+                    th
+                        h3 #{hall.name} зал
+                        hr
+                tr
+                    th Номер столика
+                    th Расположение
+                    th Макс. человек
+                    th статус
+                    - table_list.sort(function(a, b) { return a.number - b.number;})
+                    each table in table_list
+                        if table.hall.name === hall.name
+
+                            tr
+                                td #{table.number}
+                                td #{table.position}
+                                td #{table.MaxPersons}
+                                td #{table.status}
+                                if table.status === 'Свободен'
+                                    td
+                                        a(href=`${table.url}/update`) забронировать
+

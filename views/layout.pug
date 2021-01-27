@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV", crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+  body
+    header(class='header')
+      img(src='/images/4.jpg' class='logo' alt='logo')
+      div(class='header_menu')
+        div(class='header_links')
+          a(href='/catalog' class='header_link') Домашняя страница
+          a(href='/catalog/hall' class='header_link') Выбор зала
+          a(href='/catalog/cuisine' class='header_link') Наша кухня
+          a(href='/catalog/tables' class='header_link') Бронирование столика
+    div(class='content')
+      block content
+    footer(class='footer')
+      hr
+      p(class='footer_info') Данного ресторана не существует, но вы можете связаться с автором этого сайта по электронной почте
+      a(class='footer_mail' href='mailto:iljaskripchenko@gmail.com') iljaskripchenko@gmail.com
